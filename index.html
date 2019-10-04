@@ -1,0 +1,155 @@
+<html>
+<head>
+<style>
+
+@font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+html, body { height: 100%; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: 'KOMACON';
+}
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgb(29, 33, 39);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h2, .menu {
+  color: white;
+  padding: 0px 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 10px 10px;
+}
+
+.container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 3px solid black; 
+}
+
+.name-item {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: rgb(234, 235, 255);
+}
+
+.introduce-item {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  background-color: rgb(255, 255, 216);
+  padding: 10px;
+}
+
+.img-item {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  background-image: url("http://www.traveller.com.au/content/dam/images/g/u/u/4/2/c/image.related.articleLeadNarrow.300x0.guu367.png/1489448285023.jpg");
+  background-size: cover;
+}
+
+.table-item {
+  flex-flow: column;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: rgb(224, 254, 254);
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.todo-item {
+  flex-flow: column;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  background-color: rgb(211, 238, 255);
+}
+
+ul { padding-inline-start: 0px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h2>참치의 블로그</h2>
+  <div class="menu">
+    <a href="https://naver.com">나의 학과사이트</a>
+    <a href="naver.com">네이버</a>
+    <a href="naver.com">구글</a>
+    <a href="naver.com">로그인</a>
+  </div>
+</div>
+
+<div class="container">
+ 
+ <div class="name-item">
+ <h2>
+ 신 선 한 참 치
+ </h2>
+ </div>
+ 
+ <div class="introduce-item">
+<p>
+코딩을 사랑하는 대학생입니다. 백엔드 개발자로서의 진로를 희망하고 있습니다
+</p>
+ </div>
+ 
+ <div class="img-item"></div>
+ 
+
+ <div class="table-item">
+<h4>성적 현황</h4>
+ <table> 
+  <tr>
+    <th>과목</th>
+    <th>성적</th>
+  </tr>
+  <tr>
+    <td>컴퓨터구조</td><td>B+</td>
+  </tr>
+  <tr>
+    <td>운영체제</td><td>B+</td>
+  </tr>
+ </table>
+ </div>
+ <div class="todo-item">
+<h4>해 야 할 일</h4>
+  <ul>
+    <li>광주 중학생 교육</li>
+    <li>풀꽃길 프로젝트</li>
+    <li>산학협력프로젝트</li>
+  </ul>
+ </div>
+</div>
+</body>
+</html>
+
+
